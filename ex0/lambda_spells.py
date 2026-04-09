@@ -12,5 +12,7 @@ mages=[
     {"name": "shield", "power": 94, "element": "shield"},
     ]
 
-power_filter = lambda mages, min_power: list(filter(lambda x: x["power"] >= min_power, mages))
+def power_filter(mages, min_power):
+    return list(filter(lambda x: x["power"] >= min_power, mages))
+
 print(power_filter(mages, 85))
