@@ -20,7 +20,8 @@ def spell_accumulator(initial_power: int) -> Callable:
 
 def enchantment_factory(enchantment_type: str) -> Callable:
     def factory(name: str) -> str:
-        
+        return enchantment_type + " " + name
+    return factory
 
 if __name__ == "__main__":
     # counter1 = mage_counter()
