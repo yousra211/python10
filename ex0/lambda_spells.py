@@ -16,14 +16,14 @@ def mage_stats(mages: list[dict]) -> dict:
 
 
 artifacts=[
-    {"name": "Crystal Orb", "power": 85, "type": "spell"},
-    {"name": "Fire Staff", "power": 92, "type": "spell"}
+    {"name": "Crystal Orb", "power": 85, "type": "weapon"},
+    {"name": "Fire Staff", "power": 92, "type": "armor"}
              ]
 print(f"{artifacts[0]['name']} ({artifacts[0]['power']} power) comes before {artifacts[1]['name']} ({artifacts[1]['power']})")
 mages=[
     {"name": "fireball", "power": 85, "element": "fire"},
     {"name": "heal", "power": 80, "element": "healing"},
-    {"name": "shield", "power": 94, "element": "shield"},
+    {"name": "shield", "power": 94, "element": "wind"},
     ]
 print(power_filter(mages, 85))
 
