@@ -1,9 +1,9 @@
-mages=[
-    {"name": "fireball", "power": 85, "element": "fire"},
-    {"name": "heal", "power": 80, "element": "healing"},
-    {"name": "shield", "power": 94, "element": "shield"},
-    ]
+from functools import partial
 
-max_power = max(mages, key=lambda x: x['power'])['power']
+def greet(greeting, name):
+    return f"{greeting}, {name}!"
 
-print(max_power)
+say_hello = partial(greet, greeting="Hello")
+
+print(say_hello(name="Alice"))  # "Hello, Alice!"
+say_hello(name="Bob")    # "Hello, Bob!"
